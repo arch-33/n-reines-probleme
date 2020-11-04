@@ -1,9 +1,9 @@
 
-var nbr = window.prompt("nombre des columns :(0 < nbr < 12)");
-if (Number(nbr) > 0 && Number(nbr)<12){
+var nbr = window.prompt("nombre des columns :(1 <= nbr <= 10)");
+if (Number(nbr) > 0 && Number(nbr)<11){
     main(Number(nbr));
 }else{
-    alert("nombre des columns doit etre entre 1 et 11");
+    alert("nombre des columns doit etre entre 1 et 10");
     document.location = document.location;
 }
 
@@ -33,7 +33,6 @@ function main(nbr){
             mem_td.innerHTML = "-"
             mem_tr.appendChild(mem_td);
         }
-		
     }
     //initialing document 
     init_document(nbr);
