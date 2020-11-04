@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+        }
+        td {
+        	width: 40px;
+        	height: 40px;
+        	font-size: 33px;
+        	text-align: center;
+        	border: 1px solid blue;
+        	border-radius: 9px;
+        	font-family: prototype;
+            cursor: pointer;
+        }
+        #mytable{
+            margin:50px 0px 0px 50px;
+
+        }
+        #mem{
+            margin-left: 50px;
+            margin-top:20px; 
+        }
+        #mem td{
+            border: 2px dashed black;
+            width: 38px;
+        }
+        #next_solu {
+			height: 50px;
+			border: 2px dashed blue;
+			border-radius: 20px;
+			margin: 20px 0px 0px 108px;
+			font-size: 26px;
+			padding: 9px;
+		}
+		#next_solu:hover{
+           background-color: blue;
+           color: white;
+           border-color: white;
+       }
+       .nbr_solution-area {
+	font-size: 29px;
+	font-family: cursive;
+	margin: 10px 0px -35px calc(13% - 96px);
+}
+    </style>
+    <legend id="nbr_solutions" class="nbr_solution-area"></legend>
+    <table border="0" id="mytable"></table>
+    <table border="0" id="mem"    ></table>
+    <button id="next_solu">solution suivante</button>
+    <script src="script.js"     ></script>
+    <script src="script_style.js"></script>
+</body>
+</html>
